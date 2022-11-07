@@ -1,4 +1,4 @@
-import star from "../star.png";
+import star from "../Pages/pic/star.png";
 
 import React from "react";
 

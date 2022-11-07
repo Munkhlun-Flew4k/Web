@@ -6,6 +6,8 @@ import { Home } from "./Pages/Home"
 import { Login } from "./Pages/Login"
 import { Products } from "./Pages/Products"
 import { Services } from "./Pages/Services"
+import { Contact } from './Pages/Contact';
+import { Getaccess } from './Pages/Getaccess';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,6 +19,8 @@ root.render(
         <Route path='/Products' element={<Products />} />
         <Route path='/Services' element={<Services />} />
         <Route path='/Login' element={<Login />} />
+        <Route path='/Contact' element={<Contact />} />
+        <Route path='/GetAccess' element={<Getaccess />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

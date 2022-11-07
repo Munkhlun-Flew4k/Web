@@ -1,6 +1,8 @@
 import React from "react";
 import backgroundpic from "./pic/backgroundpic.jpg";
-import { Header } from "../Components2/Header";
+import { Header } from "../Components/Header";
+import { Homepage } from "./Homepage";
+import { Review } from "../Components/Review";
 
 const styles = {
   bigdiv: {
@@ -8,7 +10,6 @@ const styles = {
     width: "100vw",
     height: "100vh",
     backgroundSize: "100% 100%",
-    margin: -8,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -22,7 +23,7 @@ const styles = {
   },
   huree: {
     width: "85%",
-    height: "100%",
+    height: "100vh",
     display: "flex",
     flexDirection: "column",
     gap: 120,
@@ -80,21 +81,25 @@ const styles = {
 
 export const Home = () => {
   return (
-    <div style={styles.bigdiv}>
-      <div style={styles.huree}>
-        <Header />
-        <div style={styles.middle}>
-          <p style={styles.title}>Instant collaborations for remote teams</p>
-          <p style={styles.desc}>
-            All in one for your remote team chats, collaboration and track
-            projects
-          </p>
-          <div style={{ display: "flex", gap: 30 }}>
-            <input placeholder="Email" style={styles.input} />
-            <button style={styles.button}>Get early access</button>
+    <div style={{ margin: -8 }}>
+      <div style={styles.bigdiv}>
+        <div style={styles.huree}>
+          <Header />
+          <div style={styles.middle}>
+            <p style={styles.title}>Instant collaborations for remote teams</p>
+            <p style={styles.desc}>
+              All in one for your remote team chats, collaboration and track
+              projects
+            </p>
+            <div style={{ display: "flex", gap: 30 }}>
+              <input placeholder="Email" style={styles.input} />
+              <button style={styles.button}>Get early access</button>
+            </div>
           </div>
         </div>
       </div>
+      <Homepage />
+      <Review />
     </div>
   );
 };

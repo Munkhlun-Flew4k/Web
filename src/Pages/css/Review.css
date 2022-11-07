@@ -1,0 +1,33 @@
+.Review {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  flex-direction: column;
+  gap: 50px;
+}
+.somediv2 {
+  display: flex;
+  gap: 50px;
+}
+.Reviewtitle {
+  width: 615px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.arrowgrey {
+  width: 50px;
+  height: 40px;
+}
+.arrowblue {
+  width: 50px;
+  height: 40px;
+}

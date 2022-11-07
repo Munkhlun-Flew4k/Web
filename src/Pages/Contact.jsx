@@ -21,7 +21,7 @@ const styles = {
     gap: 120,
   },
 };
-export const Services = () => {
+export const Contact = () => {
   return (
     <div style={styles.bigdiv}>
       <div style={styles.huree}>

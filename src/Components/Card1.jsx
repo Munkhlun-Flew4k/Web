@@ -1,4 +1,4 @@
-import pic1 from "../pic1.png";
+import pic1 from "../Pages/pic/pic1.png";
 
 import React from "react";
 
@@ -53,6 +53,8 @@ const styles = {
     alignItems: "center",
     flexDirection: "column",
     background: "rgb(255 255 255)",
+    filter: "drop-shadow(0px 15px 35px rgba(0, 0, 0, 0.25))",
+    borderRadius: 15,
     gap: 10,
   },
 };

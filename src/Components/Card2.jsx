@@ -1,6 +1,6 @@
-import pic2 from "../pic2.png";
+import pic2 from "../Pages/pic/pic2.png";
 
-import hehe from "../Hehe.png";
+import hehe from "../Pages/pic/Hehe.png";
 
 import React from "react";
 
