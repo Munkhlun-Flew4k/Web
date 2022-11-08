@@ -3,6 +3,7 @@ import backgroundpic from "./pic/backgroundpic.jpg";
 import { Header } from "../Components/Header";
 import { Homepage } from "./Homepage";
 import { Review } from "../Components/Review";
+import { Footer } from "../Components/Footer";
 
 const styles = {
   bigdiv: {
@@ -100,6 +101,7 @@ export const Home = () => {
       </div>
       <Homepage />
       <Review />
+      <Footer />
     </div>
   );
 };

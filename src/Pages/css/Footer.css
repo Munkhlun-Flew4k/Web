@@ -1,0 +1,22 @@
+.parent2 {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: #252b3b;
+}
+.footercolumns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footerlink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+}

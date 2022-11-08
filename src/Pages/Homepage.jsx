@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/Homepage1.css";
+import "./css/Homepage.css";
 import pic1 from "./pic/page1pic1.png";
 import somegirl from "./pic/somegirl.png";
 import somegirl2 from "./pic/somegirl2.png";

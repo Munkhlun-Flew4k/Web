@@ -62,7 +62,14 @@ const styles = {
 export const Card1 = () => {
   return (
     <div style={styles.card1}>
-      <Stars />
+      <div style={{ display: "flex", gap: 20 }}>
+        <Stars />
+        <Stars />
+        <Stars />
+        <Stars />
+        <Stars />
+      </div>
+
       <p style={styles.card1desc}>
         Give everyone you work with—inside and outside your emoji, keep
         conversations focused in channels, and simplify all your communication

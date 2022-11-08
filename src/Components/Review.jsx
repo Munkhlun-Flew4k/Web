@@ -12,12 +12,19 @@ export const Review = () => {
         <Card1 />
         <Card1 />
         <Card1 />
+        <Card1 />
+        <Card1 />
       </div>
       <div
-        style={{ display: "flex", gap: 10, marginBottom: 43, marginLeft: 820 }}
+        style={{ display: "flex", gap: 20, marginBottom: 43, marginLeft: 820 }}
       >
-        <img alt="" src={arrowgrey} className="arrowgrey" />
-        <img alt="" src={arrowblue} className="arrowblue" />
+        <div className="somediv3">
+          <img alt="" src={arrowgrey} className="arrows" />
+        </div>
+
+        <div className="somediv3">
+          <img alt="" src={arrowblue} className="arrows" />
+        </div>
       </div>
     </div>
   );
