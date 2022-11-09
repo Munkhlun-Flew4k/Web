@@ -20,6 +20,7 @@ const styles = {
     height: 326,
     display: "flex",
     flexDirection: "column",
+    marginBottom:120,
     gap: 30,
   },
   huree: {
@@ -27,7 +28,7 @@ const styles = {
     height: "100vh",
     display: "flex",
     flexDirection: "column",
-    gap: 120,
+    justifyContent:'center',
   },
   title: {
     width: 514,

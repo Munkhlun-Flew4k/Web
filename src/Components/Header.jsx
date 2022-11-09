@@ -12,6 +12,9 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    position: "fixed",
+    width: "87vw",
+    top: -20,
   },
   navbartabs: {
     marginTop: 39,

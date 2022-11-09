@@ -14,6 +14,7 @@ export const Review = () => {
         <Card1 />
         <Card1 />
         <Card1 />
+        <Card1 />
       </div>
       <div
         style={{ display: "flex", gap: 20, marginBottom: 43, marginLeft: 820 }}

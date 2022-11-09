@@ -20,3 +20,38 @@
   line-height: 27px;
   color: #ffffff;
 }
+.footertitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.footerdesc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.footerinputtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.footerinput {
+  width: 297px;
+  height: 56px;
+  background: white;
+  border-radius: 30px;
+  border: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #4da0fd;
+}

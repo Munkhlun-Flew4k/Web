@@ -12,6 +12,7 @@
 .somediv2 {
   display: flex;
   gap: 50px;
+  overflow-x: scroll;
 }
 .Reviewtitle {
   width: 615px;
