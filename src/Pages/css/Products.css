@@ -1,0 +1,32 @@
+.productsbigdiv {
+  background: white;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  overflow: hidden;
+}
+.productstitle {
+  width: 600px;
+  height: 160px;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  color: #25313c;
+  text-align: flex-start;
+}
+.productsdesc {
+  width: 700px;
+  height: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #25313c;
+}

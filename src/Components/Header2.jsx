@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../Pages/pic/logo.png";
+import logoblack from "../Pages/pic/logoblack.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const styles = {
     justifyContent: "center",
     gap: 920,
     position: "fixed",
-    background: "black",
+    background: "white",
     width: "100vw",
     zIndex: 50,
     height: 100,
@@ -30,7 +30,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     textAlign: "center",
-    color: "#FFFFFF",
+    color: "grey",
     textDecoration: "none",
   },
   navbartabstapped: {
@@ -41,15 +41,15 @@ const styles = {
     display: "flex",
     alignItems: "center",
     textAlign: "center",
-    color: "#FFFFFF",
+    color: "grey",
     textDecoration: "underline",
   },
   button: {
     width: 128,
     height: 56,
-    border: "2px solid #FFFFFF",
+    border: "2px solid rgba(77, 160, 253, 0.42)",
     borderRadius: "4px",
-    background: "transparent",
+    background: "rgba(77, 160, 253, 0.1)",
     fontFamily: "Mulish",
     fontStyle: "normal",
     fontWeight: 700,
@@ -57,19 +57,19 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    color: "#FFFFFF",
+    color: "#4DA0FD",
     textDecoration: "none",
   },
 };
 
-export const Header = () => {
+export const Header2 = () => {
   let location = useLocation();
   let pathname = location.pathname;
   console.log(pathname);
   return (
     <div style={styles.navbar}>
       <Link to="/" id="/" style={styles.navbartabs}>
-        <img src={logo} style={styles.logo} alt="" />
+        <img src={logoblack} style={styles.logo} alt="" />
       </Link>
       <div style={{ display: "flex", gap: 60 }}>
         <Link
