@@ -30,3 +30,28 @@
   font-size: 18px;
   color: #25313c;
 }
+.productsconversation {
+  width: 232px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #6d7d8b;
+}
+.productsinput {
+  background: #ffffff;
+  border: 2px solid #bbc8d4;
+  border-radius: 4px;
+  width: 630px;
+  height: 148px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #bbc8d4;
+  display: flex;
+  text-align: start;
+}

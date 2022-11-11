@@ -4,7 +4,6 @@ import team from "../Pages/pic/logo.png";
 import instagram from "../Pages/pic/Instagram.png";
 import facebook from "../Pages/pic/Facebook.png";
 import twitter from "../Pages/pic/Twitter.png";
-import arrowblue from "../Pages/pic/arrowblue.png";
 
 export const Footer = () => {
   return (
