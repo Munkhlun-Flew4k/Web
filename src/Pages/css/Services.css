@@ -1,0 +1,39 @@
+.Services {
+  background: #f5f7fa;
+  width: 100vw;
+  height: auto;
+  margin: -8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.servicesdiv {
+  display: flex;
+  gap: 70px;
+}
+.title {
+  width: 246px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin: 0;
+}
+.desc {
+  width: 600px;
+  height: 29px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #6d7d8b;
+  margin: 0;
+}
