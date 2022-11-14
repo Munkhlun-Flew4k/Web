@@ -9,7 +9,7 @@
   align-items: center;
   background: #f5f5f5;
 }
-.title {
+.hometitle {
   width: 398px;
   height: 120px;
   font-style: normal;
@@ -20,7 +20,7 @@
   align-items: center;
   color: #000000;
 }
-.desc {
+.homedesc {
   width: 465px;
   height: 145px;
   font-style: normal;

@@ -19,8 +19,8 @@ export const Homepage = () => {
         }}
       >
         <div>
-          <p className="title">Your Hub for teamwork</p>
-          <p className="desc">
+          <p className="hometitle">Your Hub for teamwork</p>
+          <p className="homedesc">
             Give everyone you work with—inside and outside your company—a more
             productive way to stay in sync. Respond faster with emoji, keep
             conversations focused in channels, and simplify all your
@@ -72,8 +72,8 @@ export const Homepage = () => {
         }}
       >
         <div>
-          <p className="title">Simple task management</p>
-          <p className="desc">
+          <p className="hometitle">Simple task management</p>
+          <p className="homedesc">
             Give everyone you work with—inside and outside your company—a more
             productive way to stay in sync. Respond faster with emoji, keep
             conversations focused in channels, and simplify all your
@@ -92,8 +92,8 @@ export const Homepage = () => {
         }}
       >
         <div>
-          <p className="title">Scheduling that actually works</p>
-          <p className="desc">
+          <p className="hometitle">Scheduling that actually works</p>
+          <p className="homedesc">
             Give everyone you work with—inside and outside your company—a more
             productive way to stay in sync. Respond faster with emoji, keep
             conversations focused in channels, and simplify all your

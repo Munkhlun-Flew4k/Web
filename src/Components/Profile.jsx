@@ -15,7 +15,7 @@ const styles = {
     margin: 0,
   },
   date: {
-    width: 100,
+    width: 120,
     height: 18,
     fontFamily: "Mulish",
     fontStyle: "normal",

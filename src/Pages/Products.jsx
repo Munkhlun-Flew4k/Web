@@ -6,6 +6,7 @@ import { Profile } from "../Components/Profile";
 import bigpic from "../Pages/pic/products/bigpic.png";
 import { Profile2 } from "../Components/Profile2";
 import profilepic2 from "../Pages/pic/products/profilepic2.png";
+import { Comment } from "../Components/Comment";
 
 export const Products = () => {
   return (
@@ -66,7 +67,7 @@ export const Products = () => {
             height: 2,
             background: "rgb(109, 125, 139, 0.22)",
           }}
-        ></div>
+        />
         <div>
           <p className="productsconversation">Join the conversation</p>
           <div style={{ display: "flex", gap: 20 }}>
@@ -74,7 +75,15 @@ export const Products = () => {
             <input className="productsinput" placeholder="Comments" />
           </div>
         </div>
+        <div
+          style={{
+            width: 700,
+            height: 2,
+            background: "rgb(109, 125, 139, 0.22)",
+          }}
+        />
       </div>
+      <Comment />
       <Footer />
     </div>
   );
