@@ -1,6 +1,5 @@
 import React from "react";
 import { Profile } from "../Components/Profile";
-import pic1 from "../Pages/pic/Card2pic.png";
 
 const styles = {
   div: {
@@ -42,12 +41,12 @@ const styles = {
   },
 };
 
-export const Card2 = (props) => {
+export const Card2 = ({ data }) => {
   return (
     <div style={styles.div}>
       <img
         alt=""
-        src={pic1}
+        src={data.image}
         style={{
           width: 363,
           height: 150,
@@ -56,9 +55,13 @@ export const Card2 = (props) => {
           borderTopRightRadius: 50,
         }}
       />
-      <p style={styles.title}>{props.title}</p>
-      <p style={styles.desc}>{props.desc}</p>
-      <Profile name="Wade Warren" date="2nd January,2022" />
+      <p style={styles.title}>{data.owner.firstName}</p>
+      <p style={styles.desc}>{data.text}</p>
+      <Profile
+        pic={data.owner.picture}
+        name={data.owner.firstName + " " + data.owner.lastName}
+        date={data.publishDate.slice(0, 10)}
+      />
     </div>
   );
 };

@@ -12,18 +12,16 @@ import { Getaccess } from './Pages/Getaccess';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Products' element={<Products />} />
-        <Route path='/Services' element={<Services />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/GetAccess' element={<Getaccess />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/Products' element={<Products />} />
+      <Route path='/Services' element={<Services />} />
+      <Route path='/Login' element={<Login />} />
+      <Route path='/Contact' element={<Contact />} />
+      <Route path='/GetAccess' element={<Getaccess />} />
+    </Routes>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -44,7 +44,11 @@ export const Profile = (props) => {
         height: "auto",
       }}
     >
-      <img alt="" src={profilepic1} style={{ width: 56, height: 56 }} />
+      <img
+        alt=""
+        src={props.pic}
+        style={{ width: 56, height: 56, borderRadius: "50%" }}
+      />
       <p style={styles.name}>{props.name}</p>
       <div style={styles.div}></div>
       <p style={styles.date}>{props.date}</p>
