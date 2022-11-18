@@ -7,8 +7,12 @@ import bigpic from "../Pages/pic/products/bigpic.png";
 import { Profile2 } from "../Components/Profile2";
 import profilepic2 from "../Pages/pic/products/profilepic2.png";
 import { Comment } from "../Components/Comment";
+import { useState } from "react";
 
 export const Products = () => {
+  const [input, setInput] = useState("");
+  const [comments, setComments] = useState([]);
+
   return (
     <div className="productsbigdiv">
       <Header2 />
@@ -72,7 +76,21 @@ export const Products = () => {
           <p className="productsconversation">Join the conversation</p>
           <div style={{ display: "flex", gap: 20 }}>
             <img alt="" src={profilepic2} style={{ width: 56, height: 56 }} />
-            <input className="productsinput" placeholder="Comments" />
+            <input
+              className="productsinput"
+              placeholder="Comments"
+              value={input}
+              onChange={(e) => {
+                setInput(e.target.value);
+              }}
+              onKeyPress={(e) => {
+                if (e.code === "Enter") {
+                  setComments([...comments, input]);
+                  setInput("");
+                  console.log(comments);
+                }
+              }}
+            />
           </div>
         </div>
         <div
@@ -83,7 +101,17 @@ export const Products = () => {
           }}
         />
       </div>
-      <Comment />
+      {comments.map((e, index) => {
+        return (
+          <Comment
+            commentText={e}
+            removeComment={() => {
+              setComments(comments.filter((_, ind) => ind !== index));
+            }}
+            key={index}
+          />
+        );
+      })}
       <Footer />
     </div>
   );

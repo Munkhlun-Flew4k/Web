@@ -5,29 +5,41 @@ import { Footer } from "../Components/Footer";
 import "../Pages/css/Services.css";
 import { useState } from "react";
 import axios from "axios";
+import Lottie from "react-lottie";
+import * as animationData from "./99109-loading.json";
 
 const URL = "https://dummyapi.io/data/v1/tag/water/post?limit=9";
 const access_token = "63749ecbccf63dbe793509f9";
 
 export const Services = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   const [dataAPI, setDataAPI] = useState();
 
   useEffect(() => {
-    axios
-      .get(URL, {
-        headers: {
-          "APP-ID": access_token,
-        },
-      })
-      .then(function (response) {
-        // handle success
-        setDataAPI(response.data.data);
-        console.log(dataAPI);
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      });
+    const timer = setTimeout(() => {
+      axios
+        .get(URL, {
+          headers: {
+            "APP-ID": access_token,
+          },
+        })
+        .then(function (response) {
+          setDataAPI(response.data.data);
+          console.log(dataAPI);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }, 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -46,6 +58,12 @@ export const Services = () => {
         <p className="desc">
           Our latest updates and blogs about managing your team
         </p>
+        <Lottie
+          options={defaultOptions}
+          style={{ marginTop: 100, display: dataAPI ? "none" : "flex" }}
+          height={150}
+          width={150}
+        ></Lottie>
       </div>
 
       <div className="servicesdiv">
@@ -54,7 +72,7 @@ export const Services = () => {
             return <Card2 data={el} />;
           })}
       </div>
-      <button className="servicesbutton">Next-> </button>
+      <button className="servicesbutton">Next {">"} </button>
       <Footer />
     </div>
   );

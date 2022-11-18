@@ -1,5 +1,4 @@
 import React from "react";
-import profilepic1 from "../Pages/pic/products/profilepic1.png";
 
 const styles = {
   name: {

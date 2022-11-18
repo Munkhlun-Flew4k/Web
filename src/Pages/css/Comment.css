@@ -1,0 +1,21 @@
+.commentsomediv {
+  width: 35vw;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.commentbutton {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+.commentbutton:hover {
+  background: rgb(167, 167, 167);
+}

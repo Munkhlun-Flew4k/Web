@@ -45,7 +45,7 @@ const styles = {
 };
 export const Profile3 = (props) => {
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex" }}>
       <div
         style={{
           display: "flex",
@@ -61,9 +61,7 @@ export const Profile3 = (props) => {
         <div style={styles.div}></div>
         <p style={styles.date}>{props.date}</p>
       </div>
-      <p style={styles.desc}>
-        fhjdsaklfjlsddfsafdsahjkdsahgjkdsahgfkasdhfdsahifdsahfidsaifsadhiu
-      </p>
+      <p style={styles.desc}></p>
     </div>
   );
 };
