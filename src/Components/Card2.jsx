@@ -1,5 +1,7 @@
 import React from "react";
 import { Profile } from "../Components/Profile";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const styles = {
   div: {
@@ -42,26 +44,37 @@ const styles = {
 };
 
 export const Card2 = ({ data }) => {
+  let location = useLocation();
+  let pathname = location.pathname;
+  console.log(data);
   return (
-    <div style={styles.div}>
-      <img
-        alt=""
-        src={data.image}
-        style={{
-          width: 363,
-          height: 150,
-          objectFit: "cover",
-          borderTopLeftRadius: 50,
-          borderTopRightRadius: 50,
-        }}
-      />
-      <p style={styles.title}>{data.owner.firstName}</p>
-      <p style={styles.desc}>{data.text}</p>
-      <Profile
-        pic={data.owner.picture}
-        name={data.owner.firstName + " " + data.owner.lastName}
-        date={data.publishDate.slice(0, 10)}
-      />
+    <div>
+      <Link
+        to="/Products"
+        id="/Products"
+        className={pathname === "/Products" ? "navbartabstapped" : "navbartabs"}
+      >
+        <div style={styles.div}>
+          <img
+            alt=""
+            src={data.image}
+            style={{
+              width: 363,
+              height: 150,
+              objectFit: "cover",
+              borderTopLeftRadius: 50,
+              borderTopRightRadius: 50,
+            }}
+          />
+          <p style={styles.title}>{data.owner.firstName}</p>
+          <p style={styles.desc}>{data.text}</p>
+          <Profile
+            pic={data.owner.picture}
+            name={data.owner.firstName + " " + data.owner.lastName}
+            date={data.publishDate.slice(0, 10)}
+          />
+        </div>
+      </Link>
     </div>
   );
 };

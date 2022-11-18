@@ -33,19 +33,18 @@ export const Services = () => {
         })
         .then(function (response) {
           setDataAPI(response.data.data);
-          console.log(dataAPI);
         })
         .catch(function (error) {
           console.log(error);
         });
-    }, 1000);
+    }, 700);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="Services">
       <Header2 />
-      <div style={{ width: 100, height: 100 }}></div>
+      <div style={{ width: 100, height: 50 }}></div>
       <div
         style={{
           display: "flex",
@@ -63,7 +62,7 @@ export const Services = () => {
           style={{ marginTop: 100, display: dataAPI ? "none" : "flex" }}
           height={150}
           width={150}
-        ></Lottie>
+        />
       </div>
 
       <div className="servicesdiv">

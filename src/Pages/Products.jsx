@@ -12,13 +12,10 @@ import { useState } from "react";
 export const Products = () => {
   const [input, setInput] = useState("");
   const [comments, setComments] = useState([]);
-
   return (
     <div className="productsbigdiv">
       <Header2 />
-      <div
-        style={{ height: 50, background: "transparent", width: "100vw" }}
-      ></div>
+      <div style={{ height: 50, background: "transparent", width: "100vw" }} />
       <div
         style={{
           display: "flex",

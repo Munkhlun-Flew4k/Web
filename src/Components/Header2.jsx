@@ -22,28 +22,6 @@ const styles = {
     left: 0,
     top: 0,
   },
-  navbartabs: {
-    fontFamily: "Mulish",
-    fontStyle: "normal",
-    fontWeight: 700,
-    fontSize: "25px",
-    display: "flex",
-    alignItems: "center",
-    textAlign: "center",
-    color: "grey",
-    textDecoration: "none",
-  },
-  navbartabstapped: {
-    fontFamily: "Mulish",
-    fontStyle: "normal",
-    fontWeight: 700,
-    fontSize: "25px",
-    display: "flex",
-    alignItems: "center",
-    textAlign: "center",
-    color: "grey",
-    textDecoration: "underline",
-  },
   button: {
     width: 128,
     height: 56,
@@ -65,7 +43,6 @@ const styles = {
 export const Header2 = () => {
   let location = useLocation();
   let pathname = location.pathname;
-  console.log(pathname);
   return (
     <div style={styles.navbar}>
       <Link to="/" id="/" style={styles.navbartabs}>
@@ -75,10 +52,8 @@ export const Header2 = () => {
         <Link
           to="/Products"
           id="/Products"
-          style={
-            pathname === "/Products"
-              ? styles.navbartabstapped
-              : styles.navbartabs
+          className={
+            pathname === "/Products" ? "navbartabstapped" : "navbartabs"
           }
         >
           Products
@@ -86,10 +61,8 @@ export const Header2 = () => {
         <Link
           to="/Services"
           id="/Services"
-          style={
-            pathname === "/Services"
-              ? styles.navbartabstapped
-              : styles.navbartabs
+          className={
+            pathname === "/Services" ? "navbartabstapped" : "navbartabs"
           }
         >
           Services
@@ -97,10 +70,8 @@ export const Header2 = () => {
         <Link
           to="/Contact"
           id="/Contact"
-          style={
-            pathname === "/Contact"
-              ? styles.navbartabstapped
-              : styles.navbartabs
+          className={
+            pathname === "/Contact" ? "navbartabstapped" : "navbartabs"
           }
         >
           Contact
@@ -108,9 +79,7 @@ export const Header2 = () => {
         <Link
           to="/Login"
           id="/Login"
-          style={
-            pathname === "/Login" ? styles.navbartabstapped : styles.navbartabs
-          }
+          className={pathname === "/Login" ? "navbartabstapped" : "navbartabs"}
         >
           Log in
         </Link>
