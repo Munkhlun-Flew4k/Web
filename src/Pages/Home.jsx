@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import backgroundpic from "./pic/backgroundpic.jpg";
 import { Header } from "../Components/Header";
 import { Homepage } from "./Homepage";
@@ -83,7 +83,7 @@ const styles = {
 
 export const Home = () => {
   return (
-    <div style={{ margin: -8 }}>
+    <div>
       <div style={styles.bigdiv}>
         <div style={styles.huree}>
           <Header />

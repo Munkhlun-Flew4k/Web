@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../Pages/pic/logo.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import "../Pages/css/switcher.css";
 
 const styles = {
   logo: {
@@ -72,6 +73,28 @@ export const Header = () => {
         <img src={logo} style={styles.logo} alt="" />
       </Link>
       <div style={{ display: "flex", gap: 60 }}>
+        <div className="wrapper">
+          <input type="checkbox" id="hide-checkbox" />
+          <label for="hide-checkbox" className="toggle">
+            <span className="toggle-button">
+              <span className="crater crater-1"></span>
+              <span className="crater crater-2"></span>
+              <span className="crater crater-3"></span>
+              <span className="crater crater-4"></span>
+              <span className="crater crater-5"></span>
+              <span className="crater crater-6"></span>
+              <span className="crater crater-7"></span>
+            </span>
+            <span className="star star-1"></span>
+            <span className="star star-2"></span>
+            <span className="star star-3"></span>
+            <span className="star star-4"></span>
+            <span className="star star-5"></span>
+            <span className="star star-6"></span>
+            <span className="star star-7"></span>
+            <span className="star star-8"></span>
+          </label>
+        </div>
         <Link
           to="/Products"
           id="/Products"
