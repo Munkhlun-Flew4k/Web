@@ -1,5 +1,4 @@
 import React from "react";
-import profilepic1 from "../Pages/pic/products/profilepic1.png";
 
 const styles = {
   div: {
@@ -24,7 +23,7 @@ const styles = {
     margin: 0,
   },
   name: {
-    width: 150,
+    width: "auto",
     height: 30,
     fontStyle: "normal",
     fontWeight: "400",
@@ -52,7 +51,11 @@ const styles = {
 export const Profile2 = (props) => {
   return (
     <div style={styles.div}>
-      <img alt="" src={profilepic1} style={{ width: 56, height: 56 }} />
+      <img
+        alt=""
+        src={props.pic}
+        style={{ width: 56, height: 56, borderRadius: "50%" }}
+      />
       <div style={styles.div2}>
         <p style={styles.thing}>Written by</p>
         <p style={styles.name}>{props.name}</p>

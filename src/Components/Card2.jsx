@@ -47,11 +47,12 @@ export const Card2 = ({ data }) => {
   let location = useLocation();
   let pathname = location.pathname;
   console.log(data);
+
   return (
     <div>
       <Link
         to="/Products"
-        id="/Products"
+        state={{ postData: data }}
         className={pathname === "/Products" ? "navbartabstapped" : "navbartabs"}
       >
         <div style={styles.div}>
@@ -71,7 +72,7 @@ export const Card2 = ({ data }) => {
           <Profile
             pic={data.owner.picture}
             name={data.owner.firstName + " " + data.owner.lastName}
-            date={data.publishDate.slice(0, 10)}
+            date={data.publishDate}
           />
         </div>
       </Link>

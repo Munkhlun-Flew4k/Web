@@ -3,6 +3,7 @@ import { Profile3 } from "./Profile3";
 import "../Pages/css/Comment.css";
 
 export const Comment = ({ commentText, removeComment }) => {
+  console.log(commentText, removeComment);
   return (
     <div className="commentsomediv">
       <Profile3 name="Flew4k" date="13nd February,2008" />

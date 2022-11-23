@@ -50,7 +50,7 @@ export const Profile = (props) => {
       />
       <p style={styles.name}>{props.name}</p>
       <div style={styles.div}></div>
-      <p style={styles.date}>{props.date}</p>
+      <p style={styles.date}>{props.date.slice(0, 10)}</p>
     </div>
   );
 };

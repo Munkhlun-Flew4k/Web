@@ -1,5 +1,4 @@
 import React from "react";
-import { Header } from "../Components/Header";
 
 const styles = {
   bigdiv: {
@@ -24,9 +23,7 @@ const styles = {
 export const Getaccess = () => {
   return (
     <div style={styles.bigdiv}>
-      <div style={styles.huree}>
-        <Header />
-      </div>
+      <div style={styles.huree}></div>
     </div>
   );
 };

@@ -86,7 +86,6 @@ export const Home = () => {
     <div>
       <div style={styles.bigdiv}>
         <div style={styles.huree}>
-          <Header />
           <div style={styles.middle}>
             <p style={styles.title}>Instant collaborations for remote teams</p>
             <p style={styles.desc}>

@@ -1,20 +1,22 @@
-import React from "react";
+import { React } from "react";
 import { Footer } from "../Components/Footer";
-import { Header2 } from "../Components/Header2";
 import "../Pages/css/Products.css";
 import { Profile } from "../Components/Profile";
-import bigpic from "../Pages/pic/products/bigpic.png";
 import { Profile2 } from "../Components/Profile2";
-import profilepic2 from "../Pages/pic/products/profilepic2.png";
+import profilepic2 from "../Pages/pic/profilepic2.png";
 import { Comment } from "../Components/Comment";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export const Products = () => {
+  let location = useLocation();
+
   const [input, setInput] = useState("");
   const [comments, setComments] = useState([]);
+  console.log(location.state.postData);
+
   return (
     <div className="productsbigdiv">
-      <Header2 />
       <div style={{ height: 50, background: "transparent", width: "100vw" }} />
       <div
         style={{
@@ -23,12 +25,22 @@ export const Products = () => {
           alignItems: "flex-start",
         }}
       >
-        <h1 className="productstitle">
-          10 Secrets for managing a remote team{" "}
-        </h1>
-        <Profile name="Shedrack eze" date="2nd January,2022" />
+        <h1 className="productstitle">{location.state.postData.text}</h1>
+        <Profile
+          name={
+            location.state.postData.owner.firstName +
+            " " +
+            location.state.postData.owner.lastName
+          }
+          date={location.state.postData.publishDate}
+          pic={location.state.postData.owner.picture}
+        />
       </div>
-      <img src={bigpic} style={{ width: 900, height: 450 }} alt="" />
+      <img
+        src={location.state.postData.image}
+        style={{ width: 900, height: 450 }}
+        alt=""
+      />
       <div>
         <p className="productsdesc">
           If you’re thinking of starting a blog of your own, but just don’t have
@@ -61,7 +73,15 @@ export const Products = () => {
         </p>
       </div>
       <div style={{ gap: 50, display: "flex", flexDirection: "column" }}>
-        <Profile2 name="Shedrack Eze" work="CEO Team App" />
+        <Profile2
+          name={
+            location.state.postData.owner.firstName +
+            " " +
+            location.state.postData.owner.lastName
+          }
+          work="CEO Team App"
+          pic={location.state.postData.owner.picture}
+        />
         <div
           style={{
             width: 700,

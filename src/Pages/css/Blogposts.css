@@ -1,4 +1,4 @@
-.Services {
+.Blogposts {
   background: #f5f7fa;
   width: 100vw;
   height: auto;
@@ -9,7 +9,7 @@
   flex-direction: column;
   gap: 70px;
 }
-.servicesdiv {
+.Blogpostsdiv {
   display: flex;
   gap: 70px;
   flex-wrap: wrap;
@@ -39,7 +39,7 @@
   color: #6d7d8b;
   margin: 0;
 }
-.servicesbutton {
+.Blogpostsbutton {
   width: 165px;
   height: 44px;
   background: #a0b5c9;

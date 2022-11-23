@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic1 from "../Pages/pic/products/profilepic1.png";
+import profilepic2 from "../Pages/pic/profilepic2.png";
 
 const styles = {
   name: {
@@ -56,7 +56,7 @@ export const Profile3 = (props) => {
           height: "auto",
         }}
       >
-        <img alt="" src={profilepic1} style={{ width: 40, height: 40 }} />
+        <img alt="" src={profilepic2} style={{ width: 40, height: 40 }} />
         <p style={styles.name}>{props.name}</p>
         <div style={styles.div}></div>
         <p style={styles.date}>{props.date}</p>

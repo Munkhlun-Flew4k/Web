@@ -1,8 +1,7 @@
 import { React, useEffect } from "react";
-import { Header2 } from "../Components/Header2";
 import { Card2 } from "../Components/Card2";
 import { Footer } from "../Components/Footer";
-import "../Pages/css/Services.css";
+import "../Pages/css/Blogposts.css";
 import { useState } from "react";
 import axios from "axios";
 import Lottie from "react-lottie";
@@ -11,7 +10,7 @@ import * as animationData from "./99109-loading.json";
 const URL = "https://dummyapi.io/data/v1/tag/water/post?limit=9";
 const access_token = "63749ecbccf63dbe793509f9";
 
-export const Services = () => {
+export const Blogposts = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -42,8 +41,7 @@ export const Services = () => {
   }, []);
 
   return (
-    <div className="Services">
-      <Header2 />
+    <div className="Blogposts">
       <div style={{ width: 100, height: 50 }}></div>
       <div
         style={{
@@ -65,13 +63,13 @@ export const Services = () => {
         />
       </div>
 
-      <div className="servicesdiv">
+      <div className="Blogpostsdiv">
         {dataAPI &&
           dataAPI.map((el) => {
             return <Card2 data={el} />;
           })}
       </div>
-      <button className="servicesbutton">Next {">"} </button>
+      <button className="Blogpostsbutton">Next {">"} </button>
       <Footer />
     </div>
   );
