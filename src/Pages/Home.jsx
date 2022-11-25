@@ -1,6 +1,5 @@
 import { React } from "react";
 import backgroundpic from "./pic/backgroundpic.jpg";
-import { Header } from "../Components/Header";
 import { Homepage } from "./Homepage";
 import { Review } from "../Components/Review";
 import { Footer } from "../Components/Footer";
