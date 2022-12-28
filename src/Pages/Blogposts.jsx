@@ -7,8 +7,7 @@ import axios from "axios";
 import Lottie from "react-lottie";
 import * as animationData from "./99109-loading.json";
 
-const URL = "https://dummyapi.io/data/v1/tag/water/post?limit=9";
-const access_token = "63749ecbccf63dbe793509f9";
+const URL = "http://localhost:8000/users";
 
 export const Blogposts = () => {
   const defaultOptions = {
@@ -22,16 +21,21 @@ export const Blogposts = () => {
 
   const [dataAPI, setDataAPI] = useState();
 
+  const config = {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+    },
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => {
+      console.log(URL);
       axios
-        .get(URL, {
-          headers: {
-            "APP-ID": access_token,
-          },
-        })
+        .get(URL, config)
         .then(function (response) {
-          setDataAPI(response.data.data);
+          setDataAPI(response.users);
+          console.log(response);
         })
         .catch(function (error) {
           console.log(error);
